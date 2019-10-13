@@ -8,4 +8,5 @@ if (!isNaN(r)){
     document.getElementById('area').value = area.toFixed(2)
 }else{
    alert('请输入正确的数字')
-}   
+
+} 
