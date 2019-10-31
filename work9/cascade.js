@@ -10,7 +10,6 @@ var majorSelectArr = [
 ['物流', '物技', '工企', '营销', '报关', '连锁'],
 ['社工']
 ];
-
 var classSelectArr = [
     [
     ["电子1801", "电子1802"],
@@ -72,10 +71,6 @@ var classSelectArr = [
     ["连锁1811"]
 ],[
     ['社工1801']
-
-
-
-
  ]
 ]
 function createOption(obj, data) {

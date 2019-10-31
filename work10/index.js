@@ -1,17 +1,17 @@
 function monkey(){
     let total = document.getElementById("monkeytotal").value
     let kick = document.getElementById("monkeykick").value
-    total = parseInt(total) && Number(total)
-    kick = parseInt(kick) && Number(kick)
+    total = parseInt(total)&&Number(total)
+    kick = parseInt(kick)&&Number(kick)
     if(isNaN(total)||isNaN(kick)){
         alert('请输入数字')
         return
-    } 
+    }
     let monkey=[]
     for (let i=1;i<=total;i++ ){
         monkey.push(i)
     }
-    let i=0
+    let i = 0
     while (monkey.length>1){
         i++;
         head = monkey.shift()
@@ -22,6 +22,16 @@ function monkey(){
     document.getElementById('monkeyking').innerText = monkey[0]
 }
 
-function stat(){
 
-}
+
+function stat(){
+    let str =document.getElementById('str').value
+    let obj = {}
+    let sz = str.split("")
+    sz = sz.sort()
+    for (let i = 0; i < str.length; ++i){
+        let cc = sz[i]
+        obj[cc] = (obj [cc] + 1) || 1;
+    } 
+      document.getElementById('result').innerText = JSON.stringify(obj)
+    }
